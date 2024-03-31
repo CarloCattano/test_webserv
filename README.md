@@ -9,7 +9,7 @@ docker build -t webserv .
 ```
 map the filesystem to have the webserv folder parent , ie 42/webserv -> ~/42:/home/root
 ```bash
-docker run -it -v ~/42:/home/root ubuntu
+docker run -p 80:80 -p 4222:4222 -it -v ~/42:/home/root ubuntu
 ```
 press enter and you get a shell in the container
 
